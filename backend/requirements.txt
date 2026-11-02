@@ -1,0 +1,25 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+psycopg[binary]
+pydantic[email]
+pydantic-settings
+PyJWT
+pwdlib[argon2]
+numpy
+pillow
+torch
+# CLIP code targets the Transformers 4.x API (CLIPModel.get_*_features return tensors)
+transformers>=4.44,<5
+faiss-cpu
+# Serving runs on ONNX Runtime (no PyTorch in the API process)
+onnx
+onnxscript
+onnxruntime
+lightgbm
+scipy
+pandas
+mlflow
+pytest
+httpx
+prometheus-client
